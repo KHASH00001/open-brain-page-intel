@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Open Brain \u2014 Page Intel",
+  "version": "1.0",
+  "description": "Capture any page, let Claude analyze it, save to Drive",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.anthropic.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Page Intel" }
+}
